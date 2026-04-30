@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/config" },
+    { "path": "./apps/pooler" },
+    { "path": "./apps/server" },
+    { "path": "./apps/web" }
+  ]
+}
