@@ -48,6 +48,22 @@ importers:
         specifier: ^5.11.0
         version: 5.11.0
 
+  packages/db:
+    dependencies:
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
+      pg:
+        specifier: ^8.19.0
+        version: 8.19.0
+    devDependencies:
+      '@types/pg':
+        specifier: ^8.10.0
+        version: 8.20.0
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
 packages:
 
   '@esbuild/aix-ppc64@0.27.3':
@@ -244,6 +260,9 @@ packages:
 
   '@types/node@25.3.3':
     resolution: {integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==}
+
+  '@types/pg@8.20.0':
+    resolution: {integrity: sha512-bEPFOaMAHTEP1EzpvHTbmwR8UsFyHSKsRisLIHVMXnpNefSbGA1bD6CVy+qKjGSqmZqNqBDV2azOBo8TgkcVow==}
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
@@ -505,6 +524,12 @@ snapshots:
   '@types/node@25.3.3':
     dependencies:
       undici-types: 7.18.2
+
+  '@types/pg@8.20.0':
+    dependencies:
+      '@types/node': 25.3.3
+      pg-protocol: 1.12.0
+      pg-types: 2.2.0
 
   '@types/ws@8.18.1':
     dependencies:
